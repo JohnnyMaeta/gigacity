@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OGP画像の元データ（1200×630）</title>
+<!-- assets/ogp.png はこのファイルをヘッドレスChromeで1200×630でスクリーンショットして作る。
+     再生成コマンド:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+       --window-size=1200,630 --screenshot=assets/ogp.png file://<絶対パス>/assets/ogp-source.html -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+    background: linear-gradient(135deg, #0d2b50 0%, #123a6b 45%, #0b8f7d 100%);
+    color: #fff; position: relative;
+  }
+  .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .inner { position: relative; padding: 58px 74px 116px; height: 100%; display: flex; flex-direction: column; }
+  .top { display: flex; align-items: center; gap: 22px; }
+  .top svg { width: 86px; height: 86px; }
+  .pref { font-size: 25px; letter-spacing: 0.3em; color: #a9e3d8; }
+  .en { font-size: 19px; letter-spacing: 0.34em; color: #9fb8d4; margin-top: 4px; }
+  h1 { font-size: 96px; font-weight: 700; letter-spacing: 0.04em; margin-top: 40px; line-height: 1.15; }
+  .catch { font-size: 34px; margin-top: 24px; color: #dcefec; letter-spacing: 0.05em; }
+  .tags { margin-top: auto; display: flex; gap: 12px; align-items: center; }
+  .tags span {
+    border: 2px solid rgba(255,255,255,0.55); border-radius: 999px;
+    font-size: 22px; padding: 6px 22px; color: #fff;
+  }
+  .fiction {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    background: #fff6e0; color: #6b4c10; border-top: 5px solid #e0a93a;
+    font-size: 24px; padding: 16px 74px; letter-spacing: 0.01em; white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="inner">
+  <div class="top">
+    <svg viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="10" fill="#ffffff" opacity="0.12"/>
+      <g fill="none" stroke="#7fd8c9" stroke-width="2.6" stroke-linecap="round">
+        <path d="M32 13 L48 22 L48 42 L32 51 L16 42 L16 22 Z"/>
+        <path d="M32 13 L32 32 L48 42 M32 32 L16 42"/>
+      </g>
+      <g fill="#ffffff">
+        <circle cx="32" cy="13" r="4.4"/><circle cx="48" cy="42" r="4.4"/><circle cx="16" cy="42" r="4.4"/>
+      </g>
+      <circle cx="32" cy="32" r="5.6" fill="#0b8f7d" stroke="#ffffff" stroke-width="2.2"/>
+    </svg>
+    <div>
+      <div class="pref">戯 画 県 戯 画 市</div>
+      <div class="en">GIGA CITY OFFICIAL WEBSITE</div>
+    </div>
+  </div>
+  <h1>戯画市公式サイト</h1>
+  <p class="catch">ICTとAIを最大限に活かしたまちづくり</p>
+  <div class="tags">
+    <span>AI窓口24時間</span><span>手続き98%オンライン</span><span>全小中学校1人1台</span>
+  </div>
+</div>
+<div class="fiction">動画教材の作成用に作られた架空の都市です（実在の自治体とは関係ありません）</div>
+</body>
+</html>
